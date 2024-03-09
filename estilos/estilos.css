@@ -12,7 +12,7 @@ body {
 
 /*------------------------------------------------------- NAV ---------------------------------------------------------*/
 .navDiv {
-  height: 115px;
+  height: 50px;
   position: relative;
 }
 
@@ -51,8 +51,8 @@ body {
   margin-right: 7px;
   color: #fcfaf8;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 35px;
+  left: 10px;
 }
 
 .paletteNav {
@@ -74,22 +74,40 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 800px;
+  min-height: 700px;
 }
 
 .sectionPrincipal {
   width: 100%;
 }
 
+.containerTitulo {
+  display: grid;
+  grid-template-columns: 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+justify-items: center;
+}
+
+h1 {
+  /* font-family: "DM Serif Text", serif; */
+  font-size: 70px;
+  font-weight: bold;
+}
+
+/* .subtitulo {
+  font-family: "DM Serif Text", serif;
+} */
+
 .container {
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 30px;
-  margin-bottom: 60px;
-  height: 15%;
+  margin-bottom: 30px;
   background-image: url(/img/DSC_0572_01.jpg);
   background-size:cover;
   width: 100%;
@@ -98,12 +116,11 @@ body {
 
 .container .card {
   position: relative;
-  max-width: 300px;
-  height: 215px;
-  background-color: #fff;
-  margin: 30px 10px;
-  padding: 20px 15px;
-
+  max-width: 250px;
+  height: 150px;
+  background-color: #ffffff57;
+  margin: 35px 10px;
+  padding: 1px 17px;
   display: flex;
   flex-direction: column;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
@@ -111,14 +128,19 @@ body {
   border-radius: 15px;
 }
 
+.textoPresentacion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
 .container .card:hover {
-  height: 320px;
+  height: 300px;
 }
 
 .container .card .image {
   position: relative;
-  width: 260px;
-  height: 260px;
+  width: 200px;
+  height: 180px;
 
   top: -40%;
   left: 8px;
@@ -134,7 +156,7 @@ body {
 .container .card .content {
   position: relative;
   top: -140px;
-  padding: 10px 15px;
+  padding: 45px 15px;
   color: #111;
   text-align: center;
 
@@ -149,6 +171,12 @@ body {
   opacity: 1;
   transition-delay: 0.2s;
 }
+
+.holaPresentacion {
+  margin-top: 12px;
+}
+
+
 
 .carousel {
   width: 100%;
@@ -228,10 +256,10 @@ body {
   background: -webkit-gradient(linear,
       left bottom,
       left top,
-      from(rgba(0, 0, 0, 0.9)),
+      from(rgba(0, 0, 0, 0.1)),
       to(rgba(0, 0, 0, 0)));
   background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0.7) 0%,
       rgba(0, 0, 0, 0) 100%);
   font-size: 10px;
   opacity: 0;
