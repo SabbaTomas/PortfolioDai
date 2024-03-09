@@ -1,0 +1,69 @@
+.gruposCategorias {
+  margin: 40px 0 40px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+
+.cortos {
+position: relative;
+display: inline-block;
+  margin: auto;
+  width: 1000px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 2px solid hsla(0, 0%, 0%, 0.363);
+  overflow: hidden;
+}
+
+.contenedorMainCategoria {
+  background-color: #f6f4e6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
+.cortos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+
+.tituloFiccion {
+  margin: 50px 0 15px 0;
+  text-align: center;
+}
+
+.tituloFiccionLetra {
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tituloCategoria{
+    position: absolute;
+    bottom: 0;
+    right: 4px;
+    background-color: rgba(240, 248, 255, 0);
+    padding: 5px;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+.cortos:hover .tituloCategoria {
+    opacity: 1; /* Cuando se pasa el mouse por encima, el título se muestra gradualmente */
+    cursor: pointer;
+}
+
+.titulo{
+    color: rgba(240, 248, 255, 0.678);
+    font-size: 60px;
+}

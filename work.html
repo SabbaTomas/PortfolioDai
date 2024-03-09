@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos/work.css" />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="navDiv">
+      <!--         <div class="inputNav">
+            <input type="radio" name="palette" id="paletteAndersson" value="paletteAndersson" class="paletteNav">
+            <input type="radio" name="palette" id="paletteNolan" value="paletteNolan" class="paletteNav">
+            <input type="radio" name="palette" id="paletteGreta" value="paletteGreta" class="paletteNav">
+            <input type="radio" name="palette" id="paletteCopolla" value="paletteCopolla" class="paletteNav">
+            <input type="radio" name="palette" id="paletteKubric" value="paletteKubric" class="paletteNav">
+        </div> -->
+      <nav class="navMenu">
+        <!-- <a href="/index.html">Home</a>
+        <a href="#">Blog</a>
+        <a href="/work.html">Work</a>
+        <a href="#">About</a> -->
+        <a href="/index.html"><h2 class="tituloNav">DOMINGUEZ DAIANA</h2></a>
+      </nav>
+    </div>
+    <div class="contenedorMainWork">
+      <div class="imgPopUp" id="imgBox">
+        <img src="img/pinkyRoma.jpg" id="img_PopUp" alt="" />
+        <span onclick="cerrarImg()">X</span>
+      </div>
+      <div class="tituloGaleria">
+        <h3 class="tituloGaleriaTexto">Titulo ejemplo</h3>
+      </div>
+
+      <div class="galeriaImg">
+        <img loading="lazy" src="img/convertidas/DSC_0002_2_.webp" onclick="abrirImg(this.src)" alt="" /><!--  -->
+        <img loading="lazy" src="img/convertidas/000375300018_1_11zon.webp" onclick="abrirImg(this.src)" alt="" /><!--  -->
+        <img loading="lazy" src="img/convertidas/DSC_0097-4_11zon.webp" onclick="abrirImg(this.src)" alt="" /><!--  -->
+        <img loading="lazy" src="img/convertidas/DSC_0559_01_11zon.webp" onclick="abrirImg(this.src)" alt="" /><!--  -->
+        <img loading="lazy" src="img/convertidas/DSC_0141_2_.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0145_2_.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_42.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0187.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0283.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0300.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0301.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0345.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0361.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0364.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0712_11zon.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0423.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0425.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0548.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0566.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0572.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0574.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0577_01_11zon.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0731.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_0887.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_1078.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_1264 .webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_4736.webp" onclick="abrirImg(this.src)" alt="" />
+        <img loading="lazy" src="img/convertidas/DSC_4807.webp" onclick="abrirImg(this.src)" alt="" />
+      </div>
+      <!--         <div class="categorias">
+            <div class="categoriatitulos">
+                <h3 class="tituloSection fotografia">Fotografia</h3>
+            </div>
+            <div class="categoriaTitulos">
+                <h3 class="tituloSection peliculas">Peliculas</h3>
+            </div>
+        </div>
+
+        <div class="panelContenedor">
+            <div class="panelTitulo">
+                <h4>Titulo</h4>
+            </div>
+            <div class="panelImagenes">
+                <img loading="lazy" class="imagenPanel" src="img/pinkyRoma.jpg" alt="img1">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img2">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img3">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img4">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img5">
+            </div>
+        </div>
+        <div class="panelContenedor">
+            <div class="panelTitulo">
+                <h4>Titulo</h4>
+            </div>
+            <div class="panelImagenes">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img1">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img2">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img3">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img4">
+                <img class="imagenPanel" src="img/pinkyRoma.jpg" alt="img5">
+            </div>
+        </div> -->
+    </div>
+    <footer>
+      <div class="contenedorFooter">
+        <ul>
+          <li>
+            <a class="facebook" href="https://www.linkedin.com/in/daiana-dominguez12/">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google" href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <i class="fab fa-google-plus-g" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

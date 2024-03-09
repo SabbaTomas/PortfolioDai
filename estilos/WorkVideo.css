@@ -1,0 +1,41 @@
+.galeriaVideo{
+    width: 100%;
+    margin: 40px 0;
+    display: grid;
+    justify-content: center;
+}
+
+.galeriaFrames {
+    width: 73%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    margin: 40px 0;
+}
+
+.galeriaFrames img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.btnVolverEnlace {
+    text-decoration: none;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.btnVolverLetra {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Monserrat";
+}
+
+.tituloGaleria {
+    margin: 35px 0 10px 0;
+}
+
+.tituloGaleriaTexto {
+    font-family: "Monserrat";
+    font-size: 40PX;
+}
