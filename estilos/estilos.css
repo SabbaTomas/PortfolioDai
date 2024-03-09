@@ -137,10 +137,9 @@ body {
   padding: 10px 15px;
   color: #111;
   text-align: center;
-
-  visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
+
 }
 
 .container .card:hover .content {
@@ -150,6 +149,62 @@ body {
   transition-delay: 0.2s;
 }
 
+@media (max-width: 600px) {
+  .container .card {
+    max-width: 250px;
+    height: auto;
+    margin: 30px 10px;
+  }
+
+  .container .card .image {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .container .card .content {
+    position: relative;
+    top: -7px;
+    padding: 10px 15px;
+    color: #111;
+    text-align: center;
+    opacity: 1;
+  }
+
+
+  .container .card:hover {
+    height: auto;
+  }
+
+}
+
+
+@media (max-width:780px) {
+
+  .carousel-titulo {
+    margin: 0 0 0 0;
+    padding: 0px;
+  }
+  
+  .carousel-titulo-texto {
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  .carousel-item__details {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    color: #fff; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    padding: 10px; /* Espaciado alrededor del texto */
+    border-radius: 0 0 20px 20px; /* Bordes redondeados solo en la parte inferior */
+    position: absolute; /* Posición absoluta para alinear con el borde inferior */
+    bottom: 0; /* Alinear con el borde inferior */
+    left: 0; /* Alinear con el borde izquierdo */
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    text-align: center; /* Centrar el texto horizontalmente */
+    z-index: 1;
+}
+}
 .carousel {
   width: 100%;
   overflow-x: scroll;
@@ -245,27 +300,18 @@ body {
   bottom: 0;
 }
 
-.carousel-item__details:hover {
-  opacity: 1;
-}
 
-.carousel-item__details span {
-  /* width: 10px;
-    height: 10px; */
-  font-size: 0.9rem;
-  color: #2ecc71;
-  /* background-color: white; */
-}
-
-.carousel-item__details .controls {
-  padding-top: 180px;
-}
 
 .carousel-item__details .carousel-item__details--title,
 .carousel-item__details--subtitle {
   color: #fff;
   margin: 5px 0;
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  font-size: 20px;
 }
+
 
 /*------------------------------------------footer---------------------------------------------------------------*/
 footer {
