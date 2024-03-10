@@ -4,6 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
+  width: 100%;
 }
 
 .cortos {
@@ -11,11 +12,12 @@ position: relative;
 display: inline-block;
   margin: auto;
   width: 1000px;
-  height: 200px;
+  height: 245px;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
   border: 2px solid hsla(0, 0%, 0%, 0.363);
   overflow: hidden;
+  width: 100%;
 }
 
 .contenedorMainCategoria {
@@ -65,4 +67,37 @@ display: inline-block;
 .titulo{
     color: rgba(240, 248, 255, 0.678);
     font-size: 60px;
+}
+
+.practicasCategoria {
+background-color: aliceblue;
+height: 850px;
+display: grid;
+grid-template-columns:1fr;
+grid-template-rows: repeat(2, 1fr);
+align-items: center;
+    justify-items: center;
+}
+
+.videos{
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 95px;
+}
+
+.fichaTecnica {
+  margin-left: 18px;
+  margin-top: 75px;
+}
+
+.ficha {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.fichaIndex {
+  font-weight: bold;
 }
