@@ -5,10 +5,23 @@
     justify-content: center;
 }
 
-.galeriaFrames {
+.galeriaFramesMatarCuco {
     width: 73%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+    margin: 40px 0;  
+}
+
+.galeriaFramesMatarCuco img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.galeriaFrames {
+    width: 73%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 32px;
     margin: 40px 0;
 }
@@ -41,11 +54,11 @@
 }
 
 .fa-circle-chevron-left {
-    color: #e7eb0f;
+    color: #f5df96;
     position: absolute;
-    top: 8px;
+    top: 11px;
     left: 8px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .fa-circle-chevron-left:hover {

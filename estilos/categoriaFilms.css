@@ -102,11 +102,11 @@ align-items: center;
 }
 
 .fa-house {
-  color: #e7eb0f;
+  color: #f5df96;
   position: absolute;
-  top: 8px;
+  top: 11px;
   left: 8px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .fa-house:hover{
