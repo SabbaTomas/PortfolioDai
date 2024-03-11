@@ -10,6 +10,18 @@ body {
 }
 
 /*------------------------------------------MAIN---------------------------------------------------------------*/
+.fa-house {
+  color: #e7eb0f;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 30px;
+}
+
+.fa-house:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .contenedorMainWork {
   background-color: #f6f4e6;
   width: 100%;
@@ -48,9 +60,7 @@ body {
   transition: 1s;
 }
 
-.galeriaImg img:hover {
-  transform: scale(1.2);
-}
+
 
 .imgPopUp {
   width: 100%;
