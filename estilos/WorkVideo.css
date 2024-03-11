@@ -39,3 +39,16 @@
     font-family: "Monserrat";
     font-size: 40PX;
 }
+
+.fa-circle-chevron-left {
+    color: #e7eb0f;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 30px;
+}
+
+.fa-circle-chevron-left:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
