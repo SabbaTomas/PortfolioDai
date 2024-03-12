@@ -37,7 +37,7 @@ window.onload = function() {
   function ajustarIframeConMargen() {
     var contenedor = document.querySelector('.galeriaVideo');
     var iframe = contenedor.querySelector('iframe');
-    var width = contenedor.clientWidth - 320; // Restamos 20px para el margen total (10px a cada lado)
+    var width = contenedor.clientWidth - 300; // Restamos 20px para el margen total (10px a cada lado)
     var height = (width / 16) * 9; // Proporción 16:9
     iframe.style.width = width + 'px';
     iframe.style.height = height + 'px';
