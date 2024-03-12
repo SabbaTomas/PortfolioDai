@@ -25,6 +25,8 @@ body {
     top: 8px;
     left: 5px;
     font-size: 25px;
+
+
   }
 }
 .fa-house:hover{
@@ -69,8 +71,6 @@ body {
   transition: 1s;
 }
 
-
-
 .imgPopUp {
   width: 100%;
   height: 100vh;
@@ -107,6 +107,7 @@ body {
     padding: 0;
   }
 }
+
 .categorias {
   display: flex;
   justify-content: center;

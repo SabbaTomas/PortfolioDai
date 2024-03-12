@@ -63,6 +63,19 @@ display: inline-block;
     cursor: pointer;
 }
 
+@media only screen and (max-width: 707px){
+  .tituloCategoria{
+    visibility: visible;
+    opacity: 1;
+  }
+    .titulo{
+      color: rgba(255, 255, 255, 0.952);
+      font-size: 30px !important;
+      text-shadow: 0 0 2px #000000b6; 
+  }
+  
+}
+
 .titulo{
     color: rgba(255, 255, 255, 0.952);
     font-size: 60px;
