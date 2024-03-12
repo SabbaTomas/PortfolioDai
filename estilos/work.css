@@ -18,6 +18,15 @@ body {
   font-size: 25px;
 }
 
+@media only screen and (max-width: 707px) {
+  .fa-house {
+    color: #f5df96;
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    font-size: 25px;
+  }
+}
 .fa-house:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
