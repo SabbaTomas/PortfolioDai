@@ -32,3 +32,21 @@ for (let i = 0; i < caruselarray.length; i++) {
     })(i));
 }
 
+window.onload = function() {
+  // Función para ajustar el tamaño del iframe con margen
+  function ajustarIframeConMargen() {
+    var contenedor = document.querySelector('.galeriaVideo');
+    var iframe = contenedor.querySelector('iframe');
+    var width = contenedor.clientWidth - 320; // Restamos 20px para el margen total (10px a cada lado)
+    var height = (width / 16) * 9; // Proporción 16:9
+    iframe.style.width = width + 'px';
+    iframe.style.height = height + 'px';
+    contenedor.style.margin = '0 10px'; // Agregamos margen de 10px a cada lado
+  }
+
+  // Llamar a la función cuando la ventana cambie de tamaño
+  window.addEventListener('resize', ajustarIframeConMargen);
+
+  // Llamar a la función al cargar la página
+  ajustarIframeConMargen();
+};
