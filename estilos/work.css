@@ -25,9 +25,17 @@ body {
     top: 8px;
     left: 5px;
     font-size: 25px;
-
-
   }
+    .mobile-navbar {
+      background-color: black;
+      height: 25px;
+      width: 100%;; /* Ancho completo */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    }
+  
 }
 .fa-house:hover{
   -webkit-transform: scale(1.1);
@@ -41,6 +49,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 500px;
+  margin-top: 30px;
 }
 
 .tituloGaleriaTexto {

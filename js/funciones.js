@@ -33,20 +33,32 @@ for (let i = 0; i < caruselarray.length; i++) {
 }
 
 window.onload = function() {
-  // Función para ajustar el tamaño del iframe con margen
-  function ajustarIframeConMargen() {
-    var contenedor = document.querySelector('.galeriaVideo');
-    var iframe = contenedor.querySelector('iframe');
-    var width = contenedor.clientWidth - 300; // Restamos 20px para el margen total (10px a cada lado)
-    var height = (width / 16) * 9; // Proporción 16:9
-    iframe.style.width = width + 'px';
-    iframe.style.height = height + 'px';
-    contenedor.style.margin = '0 10px'; // Agregamos margen de 10px a cada lado
-  }
+    // Función para ajustar el tamaño del iframe con margen
+    function ajustarIframeConMargen() {
+      var contenedor = document.querySelector('.galeriaVideo');
+      var iframe = contenedor.querySelector('iframe');
+      var width;
+      var screenWidth = window.innerWidth;
+  
+      if (screenWidth >= 1024) {
+        // Pantalla de escritorio: Restar 320px para el margen total (160px a cada lado)
+        width = contenedor.clientWidth - 320;
+      } else {
+        // Celulares y tablets: Restar 20px para el margen total (10px a cada lado)
+        width = contenedor.clientWidth - 20;
+      }
+  
+      var height = (width / 16) * 9; // Proporción 16:9
+      iframe.style.width = width + 'px';
+      iframe.style.height = height + 'px';
+      contenedor.style.margin = '0 10px'; // Agregamos margen de 10px a cada lado
+    }
+  
+    // Llamar a la función cuando la ventana cambie de tamaño
+    window.addEventListener('resize', ajustarIframeConMargen);
+  
+    // Llamar a la función al cargar la página
+    ajustarIframeConMargen();
+  };
 
-  // Llamar a la función cuando la ventana cambie de tamaño
-  window.addEventListener('resize', ajustarIframeConMargen);
 
-  // Llamar a la función al cargar la página
-  ajustarIframeConMargen();
-};

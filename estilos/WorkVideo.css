@@ -61,6 +61,17 @@
     font-size: 25px;
 }
 
+@media only screen and (max-width: 707px){
+
+    .fa-circle-chevron-left {
+        color: #f5df96;
+        position: absolute;
+        top: 2px;
+        left: 8px;
+        font-size: 25px;
+    }
+  }
+
 .fa-circle-chevron-left:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
