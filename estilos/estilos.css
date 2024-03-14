@@ -574,6 +574,78 @@ ul li a:hover:nth-child(4) {
     font-size: 24px;
   }
 
+  .practicasCategoria {
+    width: 100% !important;
+    margin-top: 25px !important;
+    height: 1180px !important;
+    grid-template-columns: 1fr !important; /* Cambiamos a una sola columna */
+    grid-row-gap: 10px; /* Espacio entre filas */
+  }
 
- 
+  .videos {
+    grid-template-columns: 1fr !important; /* Cambiamos a una sola columna */
+    grid-template-rows: auto !important; /* Eliminamos el tamaño específico de las filas */
+    margin-top: 20px !important; /* Reducimos el margen superior */
+  }
+
+  .fichaTecnica {
+    margin: -60px 0 !important; /* Reducimos el margen superior e inferior */
+    text-align: center !important; /* Centramos el texto */
+  }
+
+  .fa-house {
+    color: #f5df96;
+    position: absolute !important;
+    top: 0px !important;
+    left: 8px !important;
+    font-size: 20px !important;
+  }
+}
+
+.practicasCategoria {
+  background-color: aliceblue;
+  height: 850px;
+  display: grid;
+  grid-template-columns:1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+      justify-items: center;
+  }
+  
+  
+  .videos{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 95px;
+  }
+  
+  .fichaTecnica {
+    margin-left: 18px;
+    margin-top: 75px;
+  }
+  
+  .ficha {
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .fichaIndex {
+    font-weight: bold;
+  }
+
+  
+.fa-house {
+  color: #f5df96;
+  position: absolute;
+  top: 11px;
+  left: 8px;
+  font-size: 25px;
+}
+
+.fa-house:hover{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }

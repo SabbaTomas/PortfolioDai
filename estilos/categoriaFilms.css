@@ -73,25 +73,6 @@ display: inline-block;
       font-size: 30px !important;
       text-shadow: 0 0 2px #000000b6; 
   }
-
-  .practicasCategoria {
-    background-color: aliceblue !important;
-    height: 1350px !important;
-    display: grid !important;
-    grid-template-columns:1fr !important;
-    grid-template-rows: repeat(2, 1fr) !important;
-    align-items: center !important;
-    justify-items: center !important;
-    }
-  
-    .videos{
-      margin-top: 70px !important;
-      display: grid !important;
-      grid-template-columns: 1fr !important;
-      grid-template-rows: repeat(2, 1fr) !important;
-      grid-column-gap: 15px !important;
-      grid-row-gap: 95px !important;
-    }
 }
 
 .titulo{
@@ -100,39 +81,7 @@ display: inline-block;
     text-shadow: 0 0 2px #000000b6
 }
 
-.practicasCategoria {
-background-color: aliceblue;
-height: 850px;
-display: grid;
-grid-template-columns:1fr;
-grid-template-rows: repeat(2, 1fr);
-align-items: center;
-    justify-items: center;
-}
 
-
-.videos{
-  margin-top: 70px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 15px;
-  grid-row-gap: 95px;
-}
-
-.fichaTecnica {
-  margin-left: 18px;
-  margin-top: 75px;
-}
-
-.ficha {
-  padding: 5px;
-  font-size: 20px;
-}
-
-.fichaIndex {
-  font-weight: bold;
-}
 
 .fa-house {
   color: #f5df96;
