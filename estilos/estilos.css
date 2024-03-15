@@ -16,34 +16,7 @@ body {
   position: relative;
 }
 
-/* .inputNav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
 
-.navMenu {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
-}
-
-.navMenu a {
-    color: #f6f4e6;
-    text-decoration: none;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-right: 20px;
-    transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:hover {
-    color: #fddb3a;
-} */
 
 .tituloNav {
   font-size: 42px;
@@ -501,7 +474,7 @@ ul li a:hover:nth-child(4) {
     max-width: 250px;
     height: 250px;
     background-color: #ffffff57;
-    margin: 35px 10px;
+    margin: 45px 10px;
     padding: 1px 17px;
     display: flex;
     flex-direction: column;
@@ -550,7 +523,7 @@ ul li a:hover:nth-child(4) {
   }
 
   .textoPresentacion {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .carousel__container {
@@ -582,8 +555,8 @@ ul li a:hover:nth-child(4) {
   }
 
   .carousel-item:hover~.carousel-item {
-    -webkit-transform: translate3d(22px, 0, 0);
-    transform: translate3d(22px, 0, 0px);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0px);
   }
   
   .carousel__container:hover .carousel-item {
@@ -636,7 +609,7 @@ ul li a:hover:nth-child(4) {
     width: 50px;
     height: 40px;
     line-height: 40px;
-    font-size: 10px;
+    font-size: 40px;
     text-align: center;
     text-decoration: none;
     color: #404040;

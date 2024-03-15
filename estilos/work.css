@@ -32,22 +32,31 @@ body {
 
     .nav-menu {
       background-color: black;
-      height: 15px;
-      width: 100%;; /* Ancho completo */
-      position: fixed;
-      top: 0;
-      left: 0;
+      height: 20px !important;
+      width: 100%;
       z-index: 1000; /* Asegura que esté por encima de otros elementos */
     }
 
     .fa-house {
       color: #f5df96 !important;
       position: static !important;
-      top: 10px !important;
-      left: 10px !important;
+      margin-top: 2px !important;
       font-size: 20px !important;
     }
-  
+
+    .fa-house:hover{
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    }
+
+    .contenedorMainWork {
+      margin-top: 0px !important;
+    }
+
+    .imgPopUp span {
+    display: block;
+    }
+ 
 }
 .fa-house:hover{
   -webkit-transform: scale(1.1);

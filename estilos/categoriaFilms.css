@@ -28,13 +28,22 @@ display: inline-block;
   min-height: 500px;
 }
 
+.contenedorMainCategoriafilms {
+  background-color: #f0ecd4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+}
+
 .cortos img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   cursor: pointer;
 }
-
 
 
 .tituloFiccion {
@@ -64,7 +73,7 @@ display: inline-block;
 
 @media only screen and (max-width: 707px){
   .navDiv {
-    height: 50px;
+    height: 25px;
     background: linear-gradient(to right, #494949, #272727 35%);
   }
   .tituloCategoria{
@@ -75,6 +84,18 @@ display: inline-block;
       color: rgba(255, 255, 255, 0.952);
       font-size: 30px !important;
       text-shadow: 0 0 2px #000000b6; 
+  }
+
+  .contenedorMainCategoriafilms {
+    margin-top: 10px;
+  }
+  .contenedorMainCategoria {
+    margin-top: 10px;
+  }
+  .fa-house {
+    display: block;
+    position: static;
+    margin-top: 5px;
   }
 
 }
