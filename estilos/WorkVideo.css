@@ -64,12 +64,21 @@
 @media only screen and (max-width: 707px){
 
     .fa-circle-chevron-left {
-        color: #f5df96;
+        color: #f5df96a6;
         position: absolute;
         top: 2px;
         left: 8px;
         font-size: 25px;
     }
+
+    .galeriaFramesMatarCuco {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 8px;
+        grid-row-gap: 8px;
+    }
+
   }
 
 .fa-circle-chevron-left:hover {

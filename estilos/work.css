@@ -18,22 +18,34 @@ body {
   font-size: 25px;
 }
 
+.nav-menu {
+  background-color: black;
+  height: 25px;
+  width: 100%;; /* Ancho completo */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
 @media only screen and (max-width: 707px) {
-  .fa-house {
-    color: #f5df96;
-    position: absolute;
-    top: 8px;
-    left: 5px;
-    font-size: 25px;
-  }
-    .mobile-navbar {
+
+    .nav-menu {
       background-color: black;
-      height: 25px;
+      height: 15px;
       width: 100%;; /* Ancho completo */
       position: fixed;
       top: 0;
       left: 0;
       z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    }
+
+    .fa-house {
+      color: #f5df96 !important;
+      position: static !important;
+      top: 10px !important;
+      left: 10px !important;
+      font-size: 20px !important;
     }
   
 }
