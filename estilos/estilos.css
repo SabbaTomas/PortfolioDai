@@ -16,7 +16,34 @@ body {
   position: relative;
 }
 
+/* .inputNav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 
+.navMenu {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+    color: #fddb3a;
+} */
 
 .tituloNav {
   font-size: 42px;
@@ -457,226 +484,242 @@ ul li a:hover:nth-child(4) {
 }
 
 /* Estilos para dispositivos móviles */
-@media only screen and (min-width: 707px) {
+@media only screen and (max-width: 707px) {
 
+  .mobile-navbar {
+    background: linear-gradient(to right, #494949, #272727 35%);
+    height: 25px;
+    width: 100%;; /* Ancho completo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
   
+  .container .card {
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+    background-color: #ffffff57;
+    margin: 35px 10px;
+    padding: 1px 17px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .sectionPrincipal .container .card:hover {
+    height: auto; /* Eliminamos la altura máxima en hover */
+  }
+
+  .sectionPrincipal .container .card .content {
+    margin-top: 30px; /* Mostramos el contenido desde el principio */
+    visibility: visible;
+    opacity: 1;
+  }
+  .navDiv {
+    height: auto;
+  }
+
+  /* Estilos de navegación */
+  .tituloNav {
+    font-size: 24px;
+  }
+
+  .paletteNav {
+    margin-right: 0;
+  }
+
+  /* Estilos de la sección principal */
+  .contenedorMain {
+    min-height: auto;
+  }
+
+  .containerTitulo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .textoPresentacion {
+    font-size: 12px;
+  }
+
+  .carousel__container {
+    white-space: nowrap; /* Reducimos el margen inferior */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .carousel-item {
+    width: calc(100% - 20px); /* Ocupa todo el ancho disponible y elimina el margen */
+    height: 270px;
+    cursor: pointer;
+  }
+
+  .carousel-item__img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0 !important;
+  }
+
+  .carousel-item__details {
+    font-size: 15px;
+    visibility: visible; /* Cambiamos a visible */
+    opacity: 1; /* Cambiamos a 1 */
+    border-radius: 0;
+  }
+
+  .carousel-item:hover~.carousel-item {
+    -webkit-transform: translate3d(22px, 0, 0);
+    transform: translate3d(22px, 0, 0px);
+  }
+  
+  .carousel__container:hover .carousel-item {
+    opacity: 1;
+  }
+  
+  .carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  /* Estilos del pie de página */
+  .contenedorFooter {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+ footer {
+    background-color: #c7c3bb;
+    width: 100%;
+  }
+  
+  .contenedorFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly
+  }
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 5px;
+    justify-items: center; 
+    padding: 0;
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 0;
+  }
+  
+  ul li a {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #404040;
+    margin: 0 10px;
+  }
+  
+
+  span {
+    display: none;
+  }
+  .facebook:hover {
+    color:#c7c3bb;
+  }
+  
+  .facebook:hover span {
+    background:#c7c3bb;
+    display: none;
+  }
+  
+  .mail:hover {
+    color:#c7c3bb;
+  }
+  
+  .mail:hover span {
+    background: #1da1f2;
+  }
+  
+  .instagram:hover {
+    color: #c32aa3;
+  }
+  
+  .instagram:hover span {
+    background: #c32aa3;
+  }
+  
+  .cv:hover {
+    color: #dd4b39;
+  }
+  
+  .cv:hover span {
+    background: #dd4b39;
+    display: none;
+  }
+  
+  ul li a .twitter {
+    display: none;
+    color: #1da1f2;
+  }
+  
+  ul li a:hover:nth-child(3) {
+    color: #c32aa3;
+    display: none;
+  }
+  
+  ul li a:hover:nth-child(4) {
+    color: #dd4b39;
+    display: none;
+  }
+
+  .practicasCategoria {
+    width: 100% !important;
+    margin-top: 25px !important;
+    height: 1180px !important;
+    grid-template-columns: 1fr !important; /* Cambiamos a una sola columna */
+    grid-row-gap: 10px; /* Espacio entre filas */
+  }
+
+  .videos {
+    grid-template-columns: 1fr !important; /* Cambiamos a una sola columna */
+    grid-template-rows: auto !important; /* Eliminamos el tamaño específico de las filas */
+    margin-top: 20px !important; /* Reducimos el margen superior */
+  }
+
+  .fichaTecnica {
+    margin: -60px 0 !important; /* Reducimos el margen superior e inferior */
+    text-align: center !important; /* Centramos el texto */
+  }
+
+  .fa-house {
+    color: #f5df96bd !important;
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px !important;
+  }
 }
 
-.mobile-navbar {
-  background: linear-gradient(to right, #494949, #272727 35%);
-  height: 25px;
-  width: 100%;; /* Ancho completo */
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
-
-.container .card {
-  position: relative;
-  max-width: 250px;
-  height: 250px;
-  background-color: #ffffff57;
-  margin: 35px 10px;
-  padding: 1px 17px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-}
-
-.sectionPrincipal .container .card:hover {
-  height: auto; /* Eliminamos la altura máxima en hover */
-}
-
-.sectionPrincipal .container .card .content {
-  margin-top: 30px; /* Mostramos el contenido desde el principio */
-  visibility: visible;
-  opacity: 1;
-}
-.navDiv {
-  height: auto;
-}
-
-/* Estilos de navegación */
-.tituloNav {
-  font-size: 24px;
-}
-
-.paletteNav {
-  margin-right: 0;
-}
-
-/* Estilos de la sección principal */
-.contenedorMain {
-  min-height: auto;
-}
-
-.containerTitulo {
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-items: center;
-  margin-top: 20px;
-  margin-bottom: 45px;
-}
-
-h1 {
-  font-size: 30px;
-}
-
-.textoPresentacion {
-  font-size: 12px;
-}
-
-.carousel__container {
-  white-space: nowrap; /* Reducimos el margen inferior */
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.carousel-item {
-  width: calc(100% - 20px); /* Ocupa todo el ancho disponible y elimina el margen */
-  height: 270px;
-  cursor: pointer;
-}
-
-.carousel-item__img {
-  width: 100%;
-  object-fit: cover;
-}
-
-.carousel-item__details {
-  font-size: 15px;
-  visibility: visible; /* Cambiamos a visible */
-  opacity: 1; /* Cambiamos a 1 */
-  transition: 450ms opacity;
-}
-
-/* Estilos del pie de página */
-.contenedorFooter {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-footer {
-  background-color: #c7c3bb;
-  width: 100%;
-}
-
-.contenedorFooter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-evenly
-}
-
-ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 5px;
-  justify-items: center; 
-  padding: 0;
-}
-
-ul li {
-  list-style: none;
-  margin: 0;
-}
-
-ul li a {
-  display: block;
-  position: relative;
-  width: 50px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 10px;
-  text-align: center;
-  text-decoration: none;
-  color: #404040;
-  margin: 0 10px;
-}
-
-
-span {
-  display: none;
-}
-.facebook:hover {
-  color:#c7c3bb;
-}
-
-.facebook:hover span {
-  background:#c7c3bb;
-  display: none;
-}
-
-.mail:hover {
-  color:#c7c3bb;
-}
-
-.mail:hover span {
-  background: #1da1f2;
-}
-
-.instagram:hover {
-  color: #c32aa3;
-}
-
-.instagram:hover span {
-  background: #c32aa3;
-}
-
-.cv:hover {
-  color: #dd4b39;
-}
-
-.cv:hover span {
-  background: #dd4b39;
-  display: none;
-}
-
-ul li a .twitter {
-  display: none;
-  color: #1da1f2;
-}
-
-ul li a:hover:nth-child(3) {
-  color: #c32aa3;
-  display: none;
-}
-
-ul li a:hover:nth-child(4) {
-  color: #dd4b39;
-  display: none;
-}
-
-.practicasCategoria {
-  width: 100% !important;
-  margin-top: 25px !important;
-  height: 1180px !important;
-  grid-template-columns: 1fr !important; /* Cambiamos a una sola columna */
-  grid-row-gap: 10px; /* Espacio entre filas */
-}
-
-.videos {
-  grid-template-columns: 1fr !important; /* Cambiamos a una sola columna */
-  grid-template-rows: auto !important; /* Eliminamos el tamaño específico de las filas */
-  margin-top: 20px !important; /* Reducimos el margen superior */
-}
-
-.fichaTecnica {
-  margin: -60px 0 !important; /* Reducimos el margen superior e inferior */
-  text-align: center !important; /* Centramos el texto */
-}
-
-.fa-house {
-  color: #f5df96bd !important;
-  margin-top: 15px;
-  margin-left: 15px;
-  font-size: 20px !important;
-}
