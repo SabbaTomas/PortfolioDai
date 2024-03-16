@@ -13,6 +13,10 @@
     margin: 40px 0;  
 }
 
+.navDivWorkVideo {
+    height: 25px;
+}
+
 .galeriaFramesMatarCuco img {
     width: 100%;
     cursor: pointer;
@@ -59,7 +63,7 @@
     position: absolute;
     top: 1px;
     left: 5px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 707px){
@@ -76,13 +80,14 @@
     }
 
     .galeriaFramesMatarCuco {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr) !important;
         grid-row-gap: 8px;
     }
 
     .galeriaFrames {
-        width: 73%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;

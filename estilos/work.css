@@ -13,14 +13,14 @@ body {
 .fa-house {
   color: #f5df96;
   position: absolute;
-  top: 11px;
+  top: 5px !important;
   left: 8px;
-  font-size: 25px;
+  font-size: 16px !important;
 }
 
 .nav-menu {
   background-color: black;
-  height: 25px;
+  height: 15px;
   width: 100%;; /* Ancho completo */
   position: fixed;
   top: 0;
@@ -51,12 +51,21 @@ body {
 
     .contenedorMainWork {
       margin-top: 0px !important;
+      width: 100% !important;
+      display: inline-block !important;
     }
 
     .imgPopUp span {
     display: block;
     }
  
+    .galeriaImg {
+      width: 100% !important;
+      margin: 0px !important;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2px !important;
+    }
 }
 .fa-house:hover{
   -webkit-transform: scale(1.1);
@@ -70,7 +79,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 500px;
-  margin-top: 30px;
 }
 
 .tituloGaleriaTexto {

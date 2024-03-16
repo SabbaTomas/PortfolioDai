@@ -520,19 +520,21 @@ ul li a:hover:nth-child(4) {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 8px;
     width: 100%;
   }
 
   .carousel-item {
-    width: calc(100% - 20px); /* Ocupa todo el ancho disponible y elimina el margen */
+    width: 92%; /* Ocupa todo el ancho disponible y elimina el margen */
     height: 270px;
     cursor: pointer;
+    border-radius: 3px solid;
+    margin: 0px;
   }
 
   .carousel-item__img {
     width: 100%;
     object-fit: cover;
-    border-radius: 0 !important;
   }
 
   .carousel-item__details {
@@ -540,6 +542,7 @@ ul li a:hover:nth-child(4) {
     visibility: visible; /* Cambiamos a visible */
     opacity: 1; /* Cambiamos a 1 */
     border-radius: 0;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0) 85%);
   }
 
   .carousel-item:hover~.carousel-item {
@@ -597,7 +600,7 @@ ul li a:hover:nth-child(4) {
     width: 50px;
     height: 40px;
     line-height: 40px;
-    font-size: 40px;
+    font-size: 28px;
     text-align: center;
     text-decoration: none;
     color: #404040;
