@@ -174,8 +174,8 @@ h1 {
 }
 
 .carousel-item {
-  width: 160px;
-  height: 180px;
+  width: 240px;
+  height: 260px;
   border-radius: 20px;
   background-color: #f6f4e6;
   overflow: hidden;
@@ -483,7 +483,7 @@ ul li a:hover:nth-child(4) {
   
   .container .card .image {
     position: relative;
-    width: 180px;
+    width: 188px;
     height: 120px;
     top: -40%;
     left: 8px;
@@ -584,7 +584,7 @@ ul li a:hover:nth-child(4) {
     visibility: visible; /* Cambiamos a visible */
     opacity: 1; /* Cambiamos a 1 */
     border-radius: 0;
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0) 75%);
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 25%, rgba(0, 0, 0, 0) 75%);
   }
 
   .carousel-item:hover~.carousel-item {
