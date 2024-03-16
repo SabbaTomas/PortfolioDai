@@ -18,8 +18,8 @@ body {
   font-size: 16px !important;
 }
 
-.nav-menu {
-  background-color: black;
+.navMenu {
+  background: linear-gradient(to right, #494949, #272727 35%);
   height: 15px;
   width: 100%;; /* Ancho completo */
   position: fixed;
@@ -30,17 +30,18 @@ body {
 
 @media only screen and (max-width: 707px) {
 
-    .nav-menu {
-      background-color: black;
-      height: 20px !important;
+    .navMenu {
+      background: linear-gradient(to right, #494949, #272727 35%);
+      height: 35px !important;
       width: 100%;
       z-index: 1000; /* Asegura que esté por encima de otros elementos */
     }
 
     .fa-house {
       color: #f5df96 !important;
-      position: static !important;
-      margin-top: 2px !important;
+      position: absolute !important;
+      margin-top: 4px !important;
+      margin-left: 4px !important;
       font-size: 20px !important;
     }
 
@@ -50,7 +51,6 @@ body {
     }
 
     .contenedorMainWork {
-      margin-top: 0px !important;
       width: 100% !important;
       display: inline-block !important;
     }
@@ -67,6 +67,7 @@ body {
       gap: 2px !important;
     }
 }
+
 .fa-house:hover{
   -webkit-transform: scale(1.1);
   transform: scale(1.1);

@@ -72,8 +72,10 @@ display: inline-block;
 }
 
 @media only screen and (max-width: 707px){
+  
+
   .navDiv {
-    height: 25px;
+    height: 40px;
     background: linear-gradient(to right, #494949, #272727 35%);
   }
   .tituloCategoria{
@@ -88,8 +90,9 @@ display: inline-block;
 
   .fa-house {
     display: block;
-    position: static;
-    margin-top: 1px;
+    position: absolute !important;
+    top: 8px;
+    left: 4px;
   }
 
 }

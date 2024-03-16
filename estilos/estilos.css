@@ -462,14 +462,56 @@ ul li a:hover:nth-child(4) {
   
   .container .card {
     position: relative;
-    max-width: 220px;
-    height: 250px;
+    max-width: 230px;
+    height: 230px;
     background-color: #ffffff57;
     margin: 70px 10px;
-    padding: 1px 17px;
+    padding: 1px 15px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .textoPresentacion {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+  }
+  
+  .container .card:hover {
+    height: 220px;
+  }
+  
+  .container .card .image {
+    position: relative;
+    width: 180px;
+    height: 120px;
+    top: -40%;
+    left: 8px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .container .card .image img {
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  
+  .container .card .content {
+    position: relative;
+    top: -140px;
+    padding: 45px 15px;
+    color: #111;
+    text-align: center;
+  }
+  
+  .container .card:hover .content {
+    margin-top: 80px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .holaPresentacion {
+    margin-top: 25px;
   }
 
   .sectionPrincipal .container .card:hover {
@@ -542,7 +584,7 @@ ul li a:hover:nth-child(4) {
     visibility: visible; /* Cambiamos a visible */
     opacity: 1; /* Cambiamos a 1 */
     border-radius: 0;
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.4) 15%, rgba(0, 0, 0, 0) 85%);
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0) 75%);
   }
 
   .carousel-item:hover~.carousel-item {
