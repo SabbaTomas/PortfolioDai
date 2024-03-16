@@ -144,7 +144,7 @@ h1 {
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #f3f3f3;
+  background-color: #f6f4e6;
 }
 
 .carousel-titulo {
@@ -177,7 +177,7 @@ h1 {
   width: 160px;
   height: 180px;
   border-radius: 20px;
-  background-color: #95bcd6;
+  background-color: #f6f4e6;
   overflow: hidden;
   margin-right: 10px;
   margin-top: 50px;
@@ -678,7 +678,7 @@ ul li a:hover:nth-child(4) {
 
   .fa-house {
     color: #f5df96bd !important;
-    margin-top: 15px;
+    margin-top: 4px !important;
     margin-left: 15px;
     font-size: 16px !important;
   }

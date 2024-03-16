@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #f6f4e6 !important;
+}
 .navMenu {
     height: 25px;
     background: linear-gradient(to right, #494949, #272727 35%);
@@ -10,7 +14,7 @@
 }
 
 .videos {
-    background-color: #f6f4e6;
+  background-color: #f6f4e6;
 }
 
 .ficha {
