@@ -1,5 +1,4 @@
 .galeriaVideo{
-    width: 100%;
     margin: 40px 0 !important;
     display: grid;
     justify-content: center;
@@ -8,8 +7,9 @@
 .galeriaFramesMatarCuco {
     width: 73%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-row-gap: 8px;
     margin: 40px 0;  
 }
 
@@ -21,14 +21,15 @@
 .galeriaFrames {
     width: 73%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 32px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     margin: 40px 0;
 }
 
 .galeriaFrames img {
     width: 100%;
     cursor: pointer;
+    
 }
 
 .btnVolverEnlace {
@@ -56,9 +57,9 @@
 .fa-circle-chevron-left {
     color: #f5df96;
     position: absolute;
-    top: 11px;
-    left: 8px;
-    font-size: 25px;
+    top: 1px;
+    left: 5px;
+    font-size: 22px;
 }
 
 @media only screen and (max-width: 707px){

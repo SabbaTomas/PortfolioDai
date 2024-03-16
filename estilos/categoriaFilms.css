@@ -95,7 +95,7 @@ display: inline-block;
   .fa-house {
     display: block;
     position: static;
-    margin-top: 5px;
+    margin-top: 1px;
   }
 
 }
@@ -104,6 +104,14 @@ display: inline-block;
     color: rgba(255, 255, 255, 0.952);
     font-size: 60px;
     text-shadow: 0 0 2px #000000b6
+}
+
+.fa-house {
+  display: block;
+  position: static;
+  margin-top: 1px;
+  margin-left: 5px;
+  font-size: 22px;
 }
 
 
