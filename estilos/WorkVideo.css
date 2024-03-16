@@ -65,22 +65,29 @@
 @media only screen and (max-width: 707px){
 
     .navDivWorkVideo {
-        height: 28px;
+        height: 20px;
     }
     .fa-circle-chevron-left {
         color: #f5df96a6;
         position: absolute;
         top: 2px;
         left: 8px;
-        font-size: 20px;
+        font-size: 13px !important;
     }
 
     .galeriaFramesMatarCuco {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr) !important;
         grid-row-gap: 8px;
     }
 
+    .galeriaFrames {
+        width: 73%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 40px 0;
+    }
   }
 
 .fa-circle-chevron-left:hover {

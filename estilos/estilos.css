@@ -452,7 +452,7 @@ ul li a:hover:nth-child(4) {
 
   .mobile-navbar {
     background: linear-gradient(to right, #494949, #272727 35%);
-    height: 25px;
+    height: 35px;
     width: 100%;; /* Ancho completo */
     position: fixed;
     top: 0;
@@ -462,10 +462,10 @@ ul li a:hover:nth-child(4) {
   
   .container .card {
     position: relative;
-    max-width: 250px;
+    max-width: 220px;
     height: 250px;
     background-color: #ffffff57;
-    margin: 45px 10px;
+    margin: 70px 10px;
     padding: 1px 17px;
     display: flex;
     flex-direction: column;
@@ -477,7 +477,7 @@ ul li a:hover:nth-child(4) {
   }
 
   .sectionPrincipal .container .card .content {
-    margin-top: 30px; /* Mostramos el contenido desde el principio */
+    margin-top: 60px; /* Mostramos el contenido desde el principio */
     visibility: visible;
     opacity: 1;
   }
@@ -490,9 +490,6 @@ ul li a:hover:nth-child(4) {
     font-size: 24px;
   }
 
-  .paletteNav {
-    margin-right: 0;
-  }
 
   /* Estilos de la sección principal */
   .contenedorMain {
@@ -505,7 +502,7 @@ ul li a:hover:nth-child(4) {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     justify-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 45px;
   }
 
@@ -514,7 +511,7 @@ ul li a:hover:nth-child(4) {
   }
 
   .textoPresentacion {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .carousel__container {
@@ -683,7 +680,7 @@ ul li a:hover:nth-child(4) {
     color: #f5df96bd !important;
     margin-top: 15px;
     margin-left: 15px;
-    font-size: 20px !important;
+    font-size: 16px !important;
   }
 }
 
