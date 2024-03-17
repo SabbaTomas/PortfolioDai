@@ -31,11 +31,11 @@ body {
 }
 
 .fa-house {
-    color: #f5df96;
+    color: #f5df96cc;
     position: relative ;
-    top: 8px ;
+    top: 10px ;
     left: 8px ;
-    font-size: 20px
+    font-size: 18px
 }
 
 footer {
@@ -138,11 +138,11 @@ footer {
   }
 
   .fa-house {
-    color: #f5df96;
+    color: #f5df96af;
     position: relative ;
     top: 4px;
     left: 8px ;
-    font-size: 15px
+    font-size: 20px
 }
 
     ul {
