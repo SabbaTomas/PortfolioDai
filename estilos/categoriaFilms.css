@@ -46,19 +46,15 @@ display: inline-block;
 }
 
 
-.tituloFiccion {
-  margin: 50px 0 15px 0;
-  text-align: center;
-}
-
 .tituloFiccionLetra {
   font-size: 45px;
   font-family: "Montserrat", sans-serif;
 }
 
 .tituloCategoria{
-  background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 20%, rgba(0, 0, 0, 0) 80%);
+  background: linear-gradient(to top,rgba(0, 0, 0, 0.8) 30%, rgba(0, 0, 0, 0.0) 70%);
   width: 100%;
+  height: 100%;
     position: absolute;
     bottom: 0px;
     right: 4px;
@@ -72,6 +68,10 @@ display: inline-block;
     cursor: pointer;
 }
 
+.titulo {
+  margin-top: 70px;
+  text-align: center;
+}
 @media only screen and (max-width: 707px){
   
 
